@@ -18,3 +18,11 @@ int main(){
     double estimate = my_hll.count_unique();
 }
 ```
+
+To use the provided main file:
+
+```bash
+    > g++ main.cpp -std=c++20 -o my_hll
+    > python3 gen_data.py <number of values to generate>
+    > ./my_hll < data.txt
+```

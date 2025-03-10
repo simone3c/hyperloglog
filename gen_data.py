@@ -1,6 +1,7 @@
 from random import randint
+import sys
 
-n = 100000
+n = int(sys.argv[1])
 l = [randint(1, (1 << 32) - 1) for _ in range(n)]
 s = set(l)
 with open("data.txt", "w") as f:
